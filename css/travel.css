@@ -1,0 +1,113 @@
+/* Adjusted CSS for Book a Holiday section */
+
+html{
+    scroll-behavior: smooth;
+}
+.book-holiday {
+    background-color: rgba(234, 234, 197, 0.3); /* Light yellow background color with transparency */
+    padding: 20px;
+    position: absolute;
+    top: 50%; /* Adjust as needed to position it vertically */
+    left: 70%; /* Adjust as needed to position it horizontally */
+    transform: translate(-50%, -50%); /* Center the form horizontally and vertically */
+    z-index: 2; /* Ensure the booking form is on top of the carousel */
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px; /* Limit the maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow */
+}
+
+/* CSS for the Carousel section */
+.carousel {
+    height: 500px; /* Set the height of the carousel */
+    position: relative;
+    z-index: 1; /* Ensure the carousel stays beneath the booking form */
+}
+
+.carousel-item {
+    height: 500px; /* Set your desired height for carousel items */
+}
+
+.carousel-item img {
+    height: 100%; /* Ensure images cover the entire carousel item */
+    width: 100%; /* Ensure images cover the entire carousel item */
+    object-fit: cover; /* Ensure images cover the entire carousel item */
+}
+
+/* Remove background and border from carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/* Ensure destinations cards have proper spacing */
+.destinations .card {
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.destinations .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Styling for reviews section */
+.reviews {
+    background-color: #e6ffe6; /* Light green background */
+}
+
+.review-card {
+    background-color: #4CAF50; /* Green background */
+    font-size: 70%;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 50%; /* Circular shape */
+    color: white; /* White text */
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow */
+}
+
+.review-card .card-title,
+.review-card .card-text {
+    color: white; /* White text */
+}
+
+.review-card .card-text small {
+    color: rgba(255, 255, 255, 0.7); /* Lighter white text for small text */
+}
+.about-us {
+    position: relative;
+    background-color: #f8f9fa; /* Fallback background color */
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url('../img/bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Makes the background image sticky */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.about-text {
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+    color: #666;
+}
